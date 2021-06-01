@@ -1,0 +1,282 @@
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(7, 7, 112);
+    
+}
+
+.header-contato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-contato p{
+    height: 25px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 894px;
+}
+
+
+.header-menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background: white;
+}
+
+.header-menu .img {
+    background: rgb(7, 7, 112);
+    height: 50px;
+    width: 110px;
+    margin-left: 55px;
+    margin-top: 20px;
+}
+
+.menu{
+    color: gray !important;
+}
+
+.navbar{
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+#nav{
+    list-style: none inside;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#nav li {
+    display: block;
+    position: relative;
+    float: left;
+    margin: 5px;
+}
+
+#nav li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    width: 100px; 
+    line-height: 30px; 
+}
+
+#nav li li a {
+    font-size: 100%;
+}
+
+#nav ul {
+    position: absolute;
+    padding: 0;
+    left: 0;
+    display: none; 
+}
+
+#nav li:hover ul ul {
+    display: none;
+}
+
+#nav li:hover ul {
+    display: block;
+    z-index: 1000;
+    background: rgb(7, 7, 112);
+    width: 100px;
+    color: white;
+}
+
+#nav li li:hover ul {
+    display: block;
+    margin-left: 90px;
+    margin-top: -30px; 
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 894px;
+    height: 290px;
+    background: gray;
+}
+
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    width: 894px;
+    margin: 10px 0;
+}
+
+.info div{
+    margin-left: 25px;
+}
+
+.imagem-teste{
+    background: rgb(7, 7, 112);
+    width: 325px;
+    height: 212px;
+}
+
+.destaques .title{
+    width: 894px;
+}
+
+.destaques .dest .imagem-dest{
+    background: rgb(7, 7, 112);
+    width: 196px;
+    height: 163px;
+}
+
+.destaques .dest {
+    margin-top: 15px;
+    display: flex;
+    width: 894px;
+}
+
+.destaques .dest ul{
+    display: flex;
+    list-style-type: none;
+    width: 894px;
+    justify-content: space-between;
+}
+
+.destaques .dest ul li{
+    width: 163px;   
+}
+
+.destaques .dest ul li .imagem-dest{
+    width: 163px;
+}
+
+.destaques .dest ul li a{
+    text-decoration: none;
+    color: gray;
+}
+
+
+footer{
+    margin-top: 15px;
+    background: rgb(58, 58, 58);
+    height: 145px;
+}
+
+footer .navbar ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+footer .navbar ul li{
+    margin: 15px 5px;
+}
+
+footer .navbar ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+footer .footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+}
+
+
+/* Slider */
+
+.slider {
+    width: 894px; 
+    margin: 20px auto;
+    overflow: hidden;
+    font-size: 0;
+}
+
+.slider-content  {
+    width: 3576px;  
+    transition: 1s ease; 
+    height: 290px; 
+}
+
+.slider-content:hover {
+    animation-play-state: paused;
+}
+
+
+.slider-content img {
+    width: 894px;
+    height: 290px;
+    display: inline-block;
+    vertical-align:top;
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+.slider-content {
+    animation: slide 12s ease infinite;
+}
+
+@keyframes slide {
+    0% {
+    transform: translateX(0%);
+    }
+
+    12.5% {
+    transform: translateX(0%);
+    }
+
+    25% {
+    transform: translateX(-25%);
+    }
+
+    37.5% {
+    transform: translateX(-25%);
+    }
+
+    50% {
+    transform: translateX(-50%);
+    }
+    
+    62.5% {
+    transform: translateX(-50%);
+    }
+
+    75% {
+    transform: translateX(-75%);
+    }
+
+    87.5% {
+    transform: translateX(-75%);
+    }
+
+    99% {
+    transform: translateX(-75%);
+    }
+
+    100% {
+    transform: translateX(0);
+    }
+}
